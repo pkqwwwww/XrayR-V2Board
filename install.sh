@@ -166,7 +166,7 @@ install_XrayR() {
         fi
     fi
 
-    if [[ ! -f /etc/XrayR/dns.json ]]; then
+    wget https://cdn.jsdelivr.net/gh/pkqwwwww/XrayR-V2Board/config.yml -O /etc/XrayR/config.yml
         cp dns.json /etc/XrayR/
     fi
     if [[ ! -f /etc/XrayR/route.json ]]; then
